@@ -55,7 +55,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 50px;
+    margin-right: 25px;
     margin-top: 15px;
     font-size: 18px;
 
@@ -63,12 +63,14 @@ body {
 
 #city{
     margin-left:-10px;
+    margin-top: -15px;
 }
 
 #temp{
     align-self: flex-end;
     margin-left:-60px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 28px
 }
 
 

@@ -18,7 +18,7 @@ fetch(url)
     })
     .catch(err => document.body.style.backgroundImage = `url(${backupUrl})`)
 
-function getBitcoin(){
+// function getBitcoin(){
     fetch(bitcoinUrl)
         .then(res => {
             if(!res.ok) {
@@ -32,9 +32,9 @@ function getBitcoin(){
             cryptoDiv.innerHTML += `<span>$${new Intl.NumberFormat().format(data.market_data.current_price.usd)}</span>`
         })
         .catch(err => console.error("error"))
-    }
+    // }
 
-    setInterval(getBitcoin, 1000)
+    // setInterval(getBitcoin, 1000)
 
     setInterval(() => {
         const date = new Date().toLocaleTimeString("en-us", {timeStyle: "medium"})
